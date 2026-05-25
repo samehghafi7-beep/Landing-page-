@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* إعدادات الخطوط والملف العامة */
 * {
     margin: 0;
@@ -197,4 +201,24 @@ body {
     font-family: 'Cairo', sans-serif;
     font-size: 14px;
 }
+/* تأثير رائع لكروت الخدمات عند تمرير الإصبع أو الماوس */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px); /* يرتفع الكرت قليلاً للأعلى */
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); /* يعطي توهج ذهبي خفيف */
+}
+
+/* تأثير جذاب لزر إرسال الرسالة */
+.btn-submit {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e6c24a; /* يتغير اللون الذهبي لدرجة أفتح قليلاً */
+    transform: scale(1.03); /* يكبر الزر بنسبة بسيطة جداً عند الضغط */
+}
+
 
